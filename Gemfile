@@ -8,7 +8,7 @@ gem 'will_paginate', '3.0.5'
 gem 'bootstrap-will_paginate', '0.0.10'
 
 group :development, :test do
-  gem 'sqlite3'
+    gem 'sqlite3'
   gem 'rspec-rails'
   gem 'guard-rspec', '4.2.4'
   gem 'guard-spork', '1.5.1'
@@ -23,7 +23,7 @@ group :assets do
 end
 
 group :production do
-  gem 'pg', '0.17.1'
+  gem 'pg'
 end
 
 group :test do
