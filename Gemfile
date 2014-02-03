@@ -22,8 +22,9 @@ group :assets do
   gem 'coffee-rails', '~> 4.0.0'
 end
 
-group :production do
+group :production, :staging do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :test do
