@@ -6,9 +6,11 @@ gem 'bootstrap-sass', '3.0.3.0'
 gem 'faker', '1.2.0'
 gem 'will_paginate', '3.0.5'
 gem 'bootstrap-will_paginate', '0.0.10'
+gem 'protected_attributes', '1.0.5'
+gem 'bcrypt-ruby', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 group :development, :test do
-    gem 'sqlite3'
+  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'guard-rspec', '4.2.4'
   gem 'guard-spork', '1.5.1'
@@ -41,9 +43,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
